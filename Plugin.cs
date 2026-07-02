@@ -12,7 +12,7 @@ namespace HeadBonker
     {
         public const string PLUGIN_ID = "com.nandbrew.headbonker";
         public const string PLUGIN_NAME = "Head Bonker";
-        public const string PLUGIN_VERSION = "0.0.1";
+        public const string PLUGIN_VERSION = "0.0.2";
 
         public static Plugin instance;
 
