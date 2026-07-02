@@ -40,7 +40,7 @@ namespace HeadBonker
 
         public void OnTriggerEnter(Collider other)
         {
-            if (!Refs.charController.enabled) return;
+            if (GameState.inBed || (Plugin.SEinstalled && LadderCheck.CheckState())) return;
             if (other.GetComponent<GPButtonSailPusher>() is GPButtonSailPusher pusher)
             {
                 Rigidbody sailRigidbody = (Rigidbody)AccessTools.Field(pusher.GetType(), "body").GetValue(pusher);
